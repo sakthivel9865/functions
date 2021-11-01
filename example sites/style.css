@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Saira+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.overlall{
+    width: 100%;
+    height:fit-content;
+}
+.container1{
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("images/bg-masthead.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display:flex;
+    padding: 10px 20px 15px;
+    justify-content: space-between;
+    padding: 20px 90px;
+    background-color: whitesmoke;
+}
+.start{
+    font-size: 20px;
+    font-weight: 100;
+    color: blue;
+    cursor: pointer;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+.btn{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#btn1{
+    font-size: 16px;
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+}
+#btn1:hover{
+    background-color: gray;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.center{
+    text-align: center; 
+    align-items: center; 
+    padding: 10px; 
+}
+.center>h1{
+    font-size: 90px;
+    letter-spacing: 10px;
+    color: #b7b7b7;;
+    padding: 250px 0px 0px 0px;
+}
+div>p{
+    font-size: 18px;
+    color: #b7b7b7;
+    padding: 10px;
+}
+.but{
+    text-align: center;
+    padding: 20px;
+}
+#get{
+    padding: 15px 20px;
+    color: #fff;
+    background-color: #64a19d;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 4px; 
+}
+#get:hover{
+   background-color:#3d817c;
+}
+.paragraph{
+    background-color: black;
+    text-align: center;
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.paragraph >.heading{
+    padding: 20px;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 2px;
+} 
+.paragraph >.para{
+    color:rgb(255,255,255,0.5);
+    font-size: 14px;
+}
+.para a.min{
+    color:#64a19d; 
+    text-decoration: none;
+}
+.im{
+    background-size: cover;
+    max-width:100%;
+    height: auto;
+    object-fit: cover;
+}
+.two-box{
+    display: inline-flex;
+    flex-direction: row;
+    margin: 80px 50px 30px 50px;
+}
+.image-1 .imgc{
+    width: 100%;
+    height: 400px;
+}
+.image-1:hover{
+    opacity: 0.9;
+}
+.content h3 p{
+    text-align: center;
+    border-left: 5px solid green;
+}
+.content{
+    margin: 127px 60px 0px 60px;
+}
+h3{
+    text-align: center;
+}
+.content p{
+    text-align: center;
+}
+.content .col{
+    color: #9B8495;
+}
+    /* .grid-container div is open to this place */
+.grid-box{
+    box-sizing: border-box;
+    font-family: 'Saira Condensed', sans-serif;
+    /* border: 1px solid black; */
+}
+.grid-container{
+    display: grid;
+    grid-template-columns:400px 400px;
+    grid-template-rows: 400px 400px ;
+    max-width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+}
+.one{
+    grid-area: none;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.one img{
+    width: 400px;
+    height: 400px;
+}
+.one:hover{
+    transform:scale(1.02)
+}
+.two:hover{
+    transform: scale(1.04);
+    background: indigo;
+}
+.three:hover{
+    transform:scale(1.04) ;
+    background: indigo;
+}
+.four:hover{
+    transform: scale(1.02);
+}
+.two{
+    grid-area: none;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: black;
+    color: white;
+    letter-spacing: 2px;
+}
+.two .misty{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 160px;
+}
+.two .mistyp{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+}
+.three{
+    grid-area: none;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: black;
+    color: white;
+    letter-spacing: 2px;
+}
+.three .misty1{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 160px;
+}
+.three .mistyp1{
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+}
+.four{
+    grid-area: none;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.four img{
+    width: 400px;
+    height: 400px;
+}
+.footer{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
+    max-width: 100%;
+    height: 450px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("images/bg-signup.jpg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+}
+.line1{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+.line1 h4{
+    padding: 100px 0px 0px 0px;
+    color: white;
+    font-weight: 100;
+}
+.column{
+    display: flex;
+    justify-content: center;
+}
+.line2{
+    flex-direction: row !important;
+    padding: 50px;
+}
+.line2 .div1 #in1{
+    padding: 20px;
+    width: 450px;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    /* margin-right: 20px; */
+}
+.line2 .div2 #in2{
+    padding: 20px;
+    width: 200px;
+    font-size: 13px;
+    color: white;
+    background: #65A19D;
+    border:none;
+    border-radius: 5px;
+}
+#in1:hover{
+    transform: scale(1.02,1.08);
+    background: rgb(122, 187, 192);
+}
+#in2:hover{
+    transform: scale(1.02,1.08);
+}
+.box-black{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
+    background-color: black; 
+    max-width: 100%; 
+    height: 300px;
+}
+.footer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.f1-box{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    background: white;
+    border-radius: 5px;
+    border-bottom: 4px solid #65A19D;
+}
+.material-icons{
+    color: #65A19D;
+    margin-top: 50px;
+    font-size: 12px;
+}
+h5{
+    color:black;
+    letter-spacing: 2px;
+
+}
+.lines{
+    width: 50px;
+    height: 1px;
+    color: gray;
+    border-bottom: 1px solid gray;
+    margin: 20px 125px 0px 125px;
+}
+#colors{
+    color: gray;
+}
+#color{
+    color: #65A19D;
+    text-decoration: underline;
+}
+.equal{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.copy{
+    color: #65a19d;
+    background: black;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+@media only screen and (max-width:480px){
+    .overlall{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .header{
+        display:flex;
+        flex-direction: row;
+        padding: 5px;
+        justify-content: space-between;
+        padding: 20px 90px;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display:flex;
+        padding: 10px 20px 15px;
+        justify-content: space-between;
+        background-color: whitesmoke;
+    }
+    .start{
+        font-size: 16px; 
+        color: blue;
+        cursor: pointer;
+        word-spacing: 0px;
+    }
+    .btn{
+        width: 200px;
+    }
+    .center>h1{
+        font-size: 35px;
+        letter-spacing: 5px;
+        color: #b7b7b7;;
+        padding: 250px 0px 0px 0px;
+    }
+    .two-box{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .image-1 .imgc{
+        width: 100%;
+        height: 250px;
+    }
+    .content h3 p{
+        text-align: center;
+        border-left: 5px solid green;
+    }
+    .content{
+        margin: 30px 20px 30px 20px;
+    }
+    h3{
+        text-align: center;
+    }
+    .content p{
+        text-align: center;
+    }
+    .content .col{
+        color: #9B8495;
+    }
+    .grid-box{
+        box-sizing: border-box;
+        font-family: 'Saira Condensed', sans-serif;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns:300px;
+        grid-template-rows: 300px 150px 150px 300px;
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    .one{
+        grid-area: none;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .one img{
+        width: 300px;
+        height: 300px;
+    } 
+    .two{
+        grid-area: none;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        background: black;
+        color: white;
+        letter-spacing: 2px;
+    }
+    .two .misty{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .two .mistyp{
+        font-size: 14px;
+        text-align: center;
+        padding: 10px 10px 0px 10px;
+    }
+    .three{
+        grid-area: none;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background: black;
+        color: white;
+        letter-spacing: 2px;
+    }
+    .three .misty1{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .three .mistyp1{
+        font-size: 14px;
+        text-align: center;
+        padding: 10px 10px 0px 10px;
+    }
+    .four{
+        grid-area: none;
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .four img{
+        width: 300px;
+        height: 300px;
+    }
+    .line1 h4 {
+        font-size: 30px;
+    }
+    .line2 {
+        flex-direction: column !important;
+        padding: 50px;
+    }
+    .div1{
+        display: inline-flex;
+        justify-content: center;
+    }
+    .div2{
+        display: inline-flex;
+        justify-content: center;
+    }
+    .line2 .div1 #in1 {
+        padding: 20px 0px 20px 0px;
+        width: 300px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .line2 .div2 #in2 {
+        width: 300px;
+        font-size: 10px;
+        color: white;
+        padding: 20px 0px 20px 0px;
+    }
+    .box-black{
+        max-width: 100%;
+        height: 550px;
+    }
+    .footer1{
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+    }
+    .f1-box{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .copy{
+        color: #65a19d;
+        background: black;
+        width: 100%;
+        height: 110px;
+        text-align: center;
+        padding: 10px 0px 0px 0px;
+    }  
+}
+@media only screen and (max-width:370px){
+    .btn {
+        width: 180px;
+    }
+}
