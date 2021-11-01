@@ -1,0 +1,157 @@
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        max-width: 100%;
+        height: auto;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 60px 20px 60px;
+        background-color: #2E3545;
+    }
+    header .top1{
+        font-size: 40px;
+        font-family: system-ui;
+        font-weight: 600;
+        color: white;
+    }
+    header .top2{
+        display: inline-flex;
+        align-items: center;
+    }
+    header .top2 a{
+        font-family: monospace;
+        font-size: 18px;
+        padding: 0px 20px 0px 20px;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+    }
+
+
+    section{
+        margin: 100px 0px 0px 0px;
+        /* text-align: center; */
+    }
+    section h1{
+        font-family: sans-serif;
+        font-size: 60px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .section .line{
+        width: 100px;
+        height: auto;
+        border: 3px solid #4b92e2;
+        margin: -10px auto 30px;
+    }
+    .section p{
+        font-size: 20px;
+        width: 600px;
+        margin: auto;
+        text-align: center;
+    }
+    aside {
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .pic{
+        background-size: contain;
+        object-fit: contain;
+        width: 850px;
+        height: auto;
+    }
+    footer{
+        max-width: 100%;
+        height: 200px;
+        background: #333333;
+        text-align: center;
+    }
+    .text{
+        font-family: sans-serif;
+        padding-top: 50px ;
+        color: whitesmoke;
+    }
+    .flex{
+        padding-top: 25px;
+        word-spacing: 4px;
+    }
+    .flex a{
+        color: turquoise;
+    }
+    .flex span{
+        color: whitesmoke;
+    }
+    .flex a:hover{
+        text-decoration: none;
+    }
+@media only screen and (max-width:850px){
+    .pic {
+        background-size: contain;
+        object-fit: contain;
+        width: 600px;
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width:700px){
+    .pic {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    header{
+        padding: 10px 15px 10px 15px;
+    }
+    header .top1{
+        font-size: 30px;
+    }
+    header .top2 a{
+        font-size: 15px;
+        padding: 0px 10px 0px 10px;
+    }
+    section h1 {
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+    }
+    .section p {
+        font-size: 15px;
+        width: 430px;
+    }
+
+    .pic {
+        background-size: contain;
+        object-fit: contain;
+        width: 450px;
+        height: auto;
+    }
+}
+@media only screen and (max-width:350px){
+    .section p {
+        font-size: 15px;
+        width: 300px;
+    }
+    .pic {
+        background-size: contain;
+        object-fit: contain;
+        width: 350px;
+        height: auto;
+    }
+    header .top1{
+        font-size: 25px;
+    }
+    header .top2 a{
+        font-size: 15px;
+        padding: 0px 8px 0px 8px;
+    }
+
+}
