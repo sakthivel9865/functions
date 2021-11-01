@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 960px;
+    margin: auto;
+    font-family: 'Noto Sans', sans-serif;
+}
+    /* header section */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px 15px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: -50px;
+}
+header .h1{
+    justify-content: flex-start;
+}
+header .h2{
+    border-left: 2px solid black;
+    padding: 0px 10px;
+}
+.overall-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.overall-box .g{
+    margin: 5px;
+    width: 80px;
+    height: 90px;
+    background-color: #D1D2D4;
+    margin-top: 50px;
+}
+.overall-box .grid h1{
+    font-size: 6px;
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+    color: white;
+}
+.tri::before{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-bottom: 12px solid #828284;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform: rotate(270deg);
+    position:relative;
+    display: inline-block;
+    bottom: 23px;
+    left: 90px;
+}
+.line::after{
+    content: '';
+    width: 18px;
+    border-bottom: 1px solid #828284;
+    position: relative;
+    left: 98px;
+    display: inline-block;
+    top: -50px;
+    transform: rotate(180deg);
+}
+.round{
+    width: 8px;
+    height: 8px;
+    position: relative;
+    background-color: #828284;
+    border-radius: 8px;
+    left: 118px;
+    top: -59px;
+}
+.box1{
+    width: 90px;
+    height: 40px;
+    border: 1px solid  palevioletred;
+    background-color:palevioletred;
+    color: white;
+    position: relative;
+    left: 426px;
+    bottom: 136px;
+}
+.box1 h6{
+    font-size: 6px;
+    text-align: center;
+    top: 10px;
+    letter-spacing: 1px;
+}
+.box2{
+    width: 0px;
+    height: 0px; 
+    border-bottom: 12px solid palevioletred;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    transform: rotate(180deg);
+    position: relative;
+    bottom: 94px;
+    left: 314px;
+}
+.tri1::before{
+    transform: rotate(90deg);
+    bottom: 23px;
+    left: 105px;
+}
+.line1::after{
+    left: 86px;
+}
+.round1{
+    left: 76px;
+}
+.overall-box1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* padding-bottom: 10px; */
+    margin-bottom: 10px;
+}
+.overall-box1 .g1{
+    margin: 5px;
+    width: 80px;
+    height: 35px;
+    background-color:#8D8686;
+    margin-top: -20px;
+}
+.overall-box1 .grid1 h6{
+    font-size: 6px;
+    text-align: center;
+    color: white;
+}
+.tri2::before{
+    transform: rotate(180deg);
+    bottom: 78px;
+    left: 37px;
+}
+.tri3::before{
+    transform: rotate(180deg);
+    left: 38px;
+    top: -63px;     
+}
+.line2::after{
+    width: 10px;
+    left: 35px;
+    top: -73px;
+    transform: rotate(90deg);
+}
+.line3::after{
+    width: 31px;
+    left: 26px;
+    top: -104px;
+    transform: rotate(90deg);
+}
+.r1{
+    left: 37px;
+    top: -83px;
+}
+.long-line1{
+    width: 848px;
+    height: 0px;
+    border-bottom: 1px solid #828284;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    transform: rotate(360deg);
+    position: relative;
+    bottom: 45px;
+    left: 43px;
+}
+.tri4::before{
+    transform: rotate(180deg);
+    left: 37px;
+}
+.line4::after{
+    transform: rotate(90deg);
+    width: 32px;
+    left: 24px;
+    top: -70px;
+}
+.r2{
+    top: -71px;
+    left: 36px;
+}
+.tri5::before{
+    transform: rotate(180deg);
+    left: 37px;
+    top: -30px;
+}
+.line5::after{
+    transform: rotate(90deg);
+    width: 32px;
+    left: 24px;
+    top: -78px;
+}
+.r3{
+    top: -79px;
+    left: 36px;
+}
+.line22::after{
+    width: 10px;
+    left: 35px;
+    top: -40px;
+    transform: rotate(90deg);
+}
+.tri22::before{
+    transform: rotate(180deg);
+    bottom: 45px;
+    left: 37px;
+}
+.small-line1{
+    width: 244px;
+    border-bottom: 1px solid #828284;
+    position: relative;
+    bottom: 73px;
+    left: 39px;
+}
+.box3{
+    width: 100px;
+    height: 35px;
+    background-color:palevioletred;
+    color: white;
+    position: relative;
+    left: -65px;
+    bottom: 15px;
+}
+.box3 h5 {
+    font-size: 6px;
+    text-align: center;
+    top: 10px;
+    letter-spacing: 1px;
+}
+.boxarrow::before{
+    border-bottom: 12px solid palevioletred;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent; 
+    transform: rotate(360deg);
+    bottom: 31px;
+    left: 64px;
+}
+.overall-box2 .g2{
+    margin-top: -20px;
+}
+.overall-box2 .grid2 h6{
+    font-size: 6px;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+    color: white;
+}
+.tri6::before{
+    transform: rotate(90deg);
+    bottom: 34px;
+    left: 104px;
+}
+.line6::after{
+    left: 86px;
+    top: -61px;
+}
+.round2{
+    left: 76px;
+    top: -70px;
+}
+.line222::after{
+    transform: rotate(90deg);
+    position: relative;
+    top: -21px;
+    left: 31px;
+}
+.line2222::after{
+    transform: rotate(90deg);
+    position: relative;
+    top: -11px;
+    left: 31px;
+}
+.tri222::before{
+    transform: rotate(180deg);
+    bottom: 26px;
+    left: 37px;
+}
+.tri2222::before{
+    transform: rotate(180deg);
+    bottom: 16px;
+    left: 37px;
+}
+.small-line2{
+    width: 244px;
+    border-bottom: 1px solid #828284;
+    position: relative;
+    bottom: 58px;
+    left: 39px;
+}
+.tri44::before{
+    transform: rotate(180deg);
+    left: 37px;
+    top: 57px;
+}
+.line44::after{
+    transform: rotate(90deg);
+    width: 32px;
+    left: 24px;
+    top: 2px;
+}
+.r22{
+    top: -0px;
+    left: 36px;
+}
+.tri444::before{
+    transform: rotate(180deg);
+    left: 37px;
+    top: 5px;
+}
+.line444::after{
+    transform: rotate(90deg);
+    width: 32px;
+    left: 24px;
+    top: -50px;
+}
+.r222{
+    top: -51px;
+    left: 36px;
+}
+.trifour::before{
+    transform: rotate(180deg);
+    left: 27px;
+    top: 5px;
+}
+.linefour::after{
+    transform: rotate(90deg);
+    width: 32px;
+    left: 14px;
+    top: -50px;
+}
+.rfour{
+    top: -51px;
+    left: 26px;
+}
+.rosecircle{
+    width: 8px;
+    height: 8px;
+    position: relative;
+    background-color: palevioletred;
+    border-radius: 8px;
+    left: 47px;
+    top: -81px;
+}
+.rosecircle1{
+    width: 8px;
+    height: 8px;
+    background-color: palevioletred;
+    border-radius: 8px;
+    left: 239px;
+    top: -79px;
+}
+.small-line4{
+    width: 293px;
+    border-bottom: 1px solid palevioletred;
+    position: relative;
+    transform: rotate(90deg);
+    bottom: -62px;
+    left: 62px;
+}
+.line02{
+    transform: rotate(180deg);
+    border-bottom: 1px solid palevioletred;
+    width: 35px;
+    left: 208px;
+    top: -83px;
+    position: relative;
+}
+.small-line3{
+    width: 177px;
+    border-bottom: 1px solid palevioletred;
+    position: relative;
+    transform: rotate(90deg);
+    bottom: -9px;
+    left: -37px;
+}
+.small-line5{
+    width: 145px;
+    border-bottom: 1px solid #828284;
+    position: relative;
+    transform: rotate(90deg);
+    bottom: -20px;
+    left: 24px;
+}
+.overall-box3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 10px;
+}
+.overall-box3 .g3{
+    margin: 5px;
+    width: 80px;
+    height: 90px;
+    background-color:#D1D2D4;
+    margin-top:50px;
+}
+.overall-box3 .grid3 h6{
+    font-size: 6px;
+    text-align: center;
+    margin-top: 35px;
+    color: white;
+}
+.tris::before{
+    top: -34px;
+    left: 89px;
+}
+.lines::after{
+    top: -61px;
+    left: 97px;
+}
+.rounds{
+    top: -70px;
+    left: 118px;
+}
+.small-line6{
+    width: 147px;
+    border-bottom: 1px solid #828284;
+    position: relative;
+    transform: rotate(90deg);
+    bottom: 53px;
+    left: 156px;
+}
+.trifour1::before{
+    transform: rotate(180deg);
+    left: 28px;
+    top: 91px;
+}
+.linefour1::after{
+    transform: rotate(90deg);
+    width: 32px;
+    left: 15px;
+    top: 35px;
+}
+.rfour1{
+    top: 34px;
+    left: 27px;
+}
+
+
+.lines1::after{
+    width: 10px;
+    top: 26px;
+    left: 106px;
+}
+.rounds1{
+    top: 17px;
+    left: 118px;
+}
+.lines2::after{
+    top: -38px;
+    left: 97px;
+}
+.rounds2{
+    top: -48px;
+    left: 118px;
+}
+.overall-box4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    padding-bottom: 10px;
+}
+.overall-box4 .g4{
+    margin: 5px;
+    width: 80px;
+    height: 90px;
+    background-color:#D1D2D4;
+    margin-top:40px;
+}
+.overall-box4 .grid4 h6{
+    font-size: 6px;
+    text-align: center;
+    margin-top: 35px;
+    color: white;
+}
+.tri414::before{
+    transform: rotate(180deg);
+    left: 37px;
+    top: 28px;
+}
+.line414::after{
+    transform: rotate(90deg);
+    width: 32px;
+    left: 24px;
+    top: -29px;
+}
+.r212{
+    top: -31px;
+    left: 36px;
+}
+.tri144::before{
+    transform: rotate(180deg);
+    left: 37px;
+    top: 4px;
+}
+.line144::after{
+    transform: rotate(90deg);
+    width: 32px;
+    left: 24px;
+    top: -51px;
+}
+.r122{
+    top: -52px;
+    left: 36px;
+}
+.tr4::before{
+    top: -33px;
+    left: 109px;
+    transform: rotate(90deg);
+    position: relative;
+}
+.lr4::after{
+    top: -60px;
+    left: 96px;
+}
+.rr4{
+    top: -48px;
+    left: 76px;
+}
+.lr44::after{
+    top: -68px;
+    left: 87px;
+}
+.trinew{
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-bottom: 12px solid palevioletred;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform: rotate(90deg);
+    position: relative;
+    top: -79px;
+    left: 101px;
+}
+.linenew{
+    width: 12px;
+    border-bottom: 1px solid palevioletred;
+    position: relative;
+    margin-left: 87px;
+    margin-top: -86px;
+}
+.li{
+    width: 15px;
+    border-bottom: 1px solid #828284;
+    position: relative;
+    margin-left: 33px;
+    margin-top: -20px;
+    transform: rotate(90deg);
+}
+.small-line7{
+    width: 121px;
+    border-bottom: 1px solid #828284;
+    position: relative;
+    transform: rotate(180deg);
+    bottom: 8px;
+    left: 40px;
+}
+.lr444::after{
+    border-bottom: 1px solid palevioletred;
+    top: -49px;
+    left: 86px;
+    width: 12px;
+}
+.trinew1{
+    top: -27px;
+    left: 100px;
+}
+.boxes{
+    width: 0px;
+    height: 0px;
+    border-bottom: 12px solid palevioletred;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    transform: rotate(180deg);
+    position: relative;
+    bottom: -44px;
+    left: 47px;
+}
+.newstri{
+    width: 0px;
+    height: 0px;
+    border-bottom: 12px solid #828284;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    transform: rotate(270deg);
+    position:relative;
+    display: inline-block;
+    bottom: 31px;
+    left: 89px;
+}
+.newsline{
+    width: 15px;
+    border-bottom: 1px solid #828284;
+    position: relative;
+    margin-left: 93px;
+    margin-top: -43px;
+}
