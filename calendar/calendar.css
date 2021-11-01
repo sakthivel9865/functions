@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.overall{
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    min-height: 100%;
+    background-color: black;
+}
+.two-cal{
+    background-color: #D6DAE0;
+    width: 800px;
+    min-height: 666px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.box1{
+    color: white;
+    width: 250px;
+    height: 290px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 70px;
+}
+.head1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 23px 0px 0px;
+}
+.head1>input{
+    font-size: 13px;
+    /* font-weight: bold; */
+    padding: 8px 8px 8px 8px;
+    border-radius: 7px;
+    border: none;
+}
+.head2{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px 0px 0px;
+}
+.head2>#same{
+    box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+    background: none;
+}
+.border{
+    border: none;
+    background-color: white;
+}
+.head2>input{
+    padding: 6px 10px 6px 10px;
+    border-radius: 7px;
+    border: none;
+}
+
+.head3{
+    display: grid;
+    width: 234px;
+    /* height: auto; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 17px 0px 0px 4px;
+    text-align: center;
+    
+} 
+.head3>div{
+    font-size: 13px;
+    color: black;
+}
+.head3 #bright{
+    color: #9CA2A8;
+}
+.head3 #change{
+    border: 1px solid #CCE9FD;
+    border-radius: 6px;
+}
+
+.box2{
+    color: white;
+    width: 250px;
+    height: 375px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-top: 70px;
+}
+.head3 #bg{
+    background: #088EFA;
+    border-radius: 6px;
+}
+.remainder{
+    color:#616770;
+    font-size: 13px;
+    padding: 20px 0px 20px 8px;
+}
+.remainder span{
+    margin-left: 20px;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    /* padding: 10px; */
+    width: 100px;
+}
+.btn #b1{
+    padding: 8px 30px 8px 30px;
+    border: none;
+    border-radius: 7px;
+}
+.btn #b2{
+    padding: 8px 38px 8px 38px;
+    margin-left: 30px;
+    border: none;
+    background: #088EFA;
+    color: white;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width:480px){
+
+    .overall{
+        max-width: 100%;
+        min-height: 100%;
+        background-color: whitesmoke;
+    }
+
+    .two-cal{
+        background-color: whitesmoke;
+        width: 400px;
+        min-height: auto;
+        margin:0px 0px 0px 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .box1{
+        color: white;
+        width: 250px;
+        height: 290px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        margin: 70px 0px 0px 5px;
+    }
+}
+    
