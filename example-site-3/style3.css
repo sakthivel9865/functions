@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    body{
+        margin: 0;
+        padding: 0;
+        background: #F2F2F2;
+    }
+    .container{     
+        max-width: 100%;
+        height: auto;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 60px 20px 60px;
+    }
+    header .top1{
+        font-size: 40px;
+        font-family: system-ui;
+        font-weight: 600;
+        color: black;
+    }
+    .top1:hover{
+        background: teal;
+        border-radius: 10px;
+    }
+    header .top2{
+        display: inline-flex;
+        align-items: center;
+    }
+    header .top2 a{
+        padding: 0px 20px 0px 20px;
+        align-items: center;
+        text-decoration: none;
+        color:gray;
+        font-weight: 600;
+    }
+    .underline{
+        display: inline-block;
+        position: relative;
+        color: #0087ca;
+    }
+    
+    .underline:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: -3px;
+        left: 0;
+        background-color: #0087ca;
+        transform-origin: bottom right;
+        transition: transform 1s ease-out;
+    }
+      
+    .underline:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    .underline:hover{
+        color: blue;
+    }
+    .sub-container{
+        margin-top: 100px;
+    }
+    .center-box{
+        max-width: 65%;
+        height: auto;
+        margin: auto;
+    }
+
+    .heading1{
+        max-width: 100%;
+        max-height: 400px;
+        font-weight: 100;
+    }
+    .heading1 h1{
+        font-size: 48px;
+        margin: 19px 0 -15px 0;
+    }
+    .heading1 p{
+        padding: 0px 0px 19px;
+        font-size: 20px;
+    }
+    .two-box{
+        font-family: 'Roboto', sans-serif;
+        max-width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+    }
+    .box1{
+       width: 100%;
+    }
+    .box1 img{
+        width: 100%;
+        height: 500px;   
+    } 
+    .box2{
+        width: 100%;
+        background:whitesmoke;
+    }
+    .second{
+        margin: 80px 20px 20px 20px;
+    }
+    .second h5{
+        margin: -10px 0px 20px;
+        font-size: 35px;
+        font-weight: 100;
+    }
+    .second p{
+        width: 320px;
+        line-height: 25px;
+    }
+    .second input{
+        font-family: inherit;
+        padding: 17px 35px;
+        letter-spacing: 1px;
+        font-size: 17px;
+        background: #4B92E2;
+        border: none;
+        color: white;
+        margin: 15px 0px 30px 0px;
+    }
+    input:hover{
+        transform: scale(1.09,1.09);
+        background: blueviolet;
+    }
+    .freepik a:hover{
+        font-size: 18px;
+        color: green;
+    }
+    .freepik span{
+        font-size: 16px;
+    }
+    footer{
+        max-width: 100%;
+        height: 200px;
+        background: #333333;
+        text-align: center;
+    }
+    .text{
+        font-family: sans-serif;
+        padding-top: 50px ;
+        color: whitesmoke;
+    }
+    .flex{
+        padding-top: 25px;
+        word-spacing: 4px;
+    }
+    .flex a{
+        color: skyblue;
+        font-size: 12px;
+    }
+    .flex span{
+        color: whitesmoke;
+    }
+    .flex a:hover{
+        text-decoration: none;
+    }
+
+    @media only screen and (max-width:480px){
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 30px 20px 30px;
+        }
+        header .top1{
+            font-size: 30px;
+            font-family: system-ui;
+            font-weight: 600;
+            color: black;
+        }
+        header .top2{
+            display: inline-flex;
+            align-items: center;
+        }
+        header .top2 a{
+            padding: 0px 10px 0px 10px;
+            align-items: center;
+            text-decoration: none;
+            color:black;
+            font-weight: 600;
+        }
+        .heading1 h1{
+            font-size: 20px;
+            margin: 19px 0 -5px 0;
+        }
+        .heading1 p {
+            padding: 0px 0px 7px;
+            font-size: 14px;
+        }
+        .center-box{
+            max-width: 85%;
+            height: auto;
+            margin: auto;
+        }
+        .two-box{
+            font-family: 'Roboto', sans-serif;
+            max-width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+        .box1 img {
+            width: 100%;
+            height: 400px;
+        }
+        .box2 {
+            height: 400px;
+            background: whitesmoke;
+        }
+        .second h5 {
+            margin: -65px 0px 0px;
+            font-size: 28px;
+        }
+        .second p {
+            width: 310px;
+            line-height: 30px;
+            font-size: 16px;
+        }
+        .second input{  
+            padding: 15px 20px;
+            font-size: 15px;
+            margin: 15px 0px 25px 0px;
+        }
+        footer{
+            margin-top: 315px;
+        }
+        footer{
+            max-width: 100%;
+            height: 250px;
+            background: #333333;
+            text-align: center;
+            margin-top: 315px;
+        }
+        .flex {
+            display: flex;
+            line-height: 20px;
+            flex-direction: column;
+            padding: 35px;
+        }
+    }
+    @media only screen and (max-width:380px){
+        .second p {
+            width: 260px;
+            line-height: 24px;
+            font-size: 16px;
+        }
+    }
