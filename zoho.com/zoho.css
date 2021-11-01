@@ -1,0 +1,2182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.z-logo{
+    left: 40px;
+    top: 16px;
+    width: 126px;
+    height: 41px;
+    content: '';
+    position: absolute;
+    background-image: url('zoho-images/zone-sprite@2x.png');
+    background-repeat: no-repeat;
+    background-size: auto 69px;
+}
+ .sub-header{
+    padding: 30px 0px 0px 0px;
+    margin-right: 40px;
+    font-size: 15px;
+}
+a#colors {
+    padding: 0px 10px 0px 10px;
+    text-decoration: none;
+    color: black;
+}
+a.colors1{
+    color: red;
+}
+/* a.colors1:hover{
+    color: black;
+} */
+
+.sub-header a.animate{
+    position: relative;
+}
+.sub-header a.animate:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    /* top: 2px; */
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    visibility: hidden;
+    background-color: yellow;
+    transform: scaleX(0);
+    transition: all 10s ease-in;
+}
+.sub-header a.animate:hover{
+    visibility: visible;
+    transform: scaleX(1);
+
+}
+
+
+
+
+.animate{
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .animate:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    margin-bottom: -5px;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.50s ease-out;
+  }
+  
+  .animate:hover:after {
+    transform: scaleX(0.99);
+    transform-origin: bottom left;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.earth-header1 {
+    display: inline-block;
+}
+.earth-header1{
+    position: relative;
+    height: 25px;
+}
+.earth-icon{
+    position: relative;
+    font-size: 14px;
+    padding-left: 25px;
+    padding-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.earth-icon::before{
+    content: '';
+    background-image: url(zoho-images/zone-sprite@2x.png);
+    background-position-x: -269px;
+    background-position-y: 16px;
+    background-size: 457px;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 51px;
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.hov{
+    width: 25px;
+    height: 21px;
+    background-size: auto 100px;
+    background-position: -398px -73px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    transform: scale(.8);
+    background-repeat: no-repeat;
+    background-image: url('zoho-images/zh-sprite-2x-new.png');
+}
+
+
+
+
+/* paragraph div is opened */
+.paragraph{
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.paragraph h1{
+    font-size: 2.4rem;
+    line-height: 49px;
+    font-weight: 500;   
+}
+.paragraph p{
+    max-width: 830px;
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: center;
+    margin: auto;
+    line-height: 30px;
+}
+
+#center {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-top: -6px;
+    
+}
+
+
+
+
+
+
+.overall-split{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.crm1{
+    width: 45%;
+    height: auto;
+    background-image: linear-gradient(to right, #e8f4fe, #e8f4fe,#f0f6ff, #f6f9ff, #fbfcff, #ffffff);
+}
+.crm1{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border: 1px solid #efefef;
+}
+.topic1{
+    width: 55%;
+    height: auto;
+}
+.topic1-span{
+    font-size: 16px;
+    font-weight: 500;
+   
+}
+.topic1-span{
+    position: absolute;
+    background-image: url('zoho-images/zh-sprite-2x-new.png');
+    background-position-x: -1044px;
+    height: 50px;
+    background-position-y: 10px;
+    background-size: auto 120px;
+    background-repeat: no-repeat;
+    top: 100px;
+    left: 25px;
+    transform: translate(20%, 10px);
+    padding-top: 100px;
+    text-align: center;
+    width: 91px   
+}
+.topic2{
+    padding: 109px 50px 105px 40px;
+}
+.topic2 h3{
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+.topic2 #ptag{
+    font-size: 14px;
+    padding: 16px 0px 16px 0px;
+    line-height: 20px;
+   
+}
+
+.topic2 input {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 12px 8px 12px;
+    border: none;
+    color: white;
+    background: #F0483E;
+}
+.topic2 input:hover{
+    color: red;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+.crm2{
+    width: 55%;
+    height: auto;
+}
+.grid-w1{
+     border-bottom: 1px solid #efefef; 
+     border-right: 1px solid #efefef; 
+}
+/* .grid-w1:hover{
+    border-bottom: 1px solid blue !important;
+} */
+.grid-w4{
+    border-top: 1px solid #efefef; 
+    border-left: 1px solid #efefef; 
+}
+.grid-wrapper1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 175px 175px;
+    padding-top: 30px;
+}
+.grid-wrapper1>div{
+    padding: 30px;
+}
+.l-side{
+    width: 100px;
+    height: auto;
+    position: relative;
+}
+.desk-icons1{
+    position: absolute;
+    background-image: url(zoho-images/zp-global-icon-sprite-2x.png);
+    background-size: 960px auto;
+    left: -10px;
+    width: 64px;
+    height: 64px;
+    background-position-x: -192px;
+    background-position-y: -160px;
+}
+.r-side{
+    padding: 0px 0px 0px 80px;
+}
+.r-side .all-h5{
+    font-size: 18px;
+    font-weight: 500;
+}
+.r-side .all-p1{
+    padding: 5px 0px 15px;
+    line-height: 15px;
+    font-size: 13px;
+}
+input.btn1 {
+    font-weight: 500;
+    font-size: 10px;
+    padding: 8px 16px;
+    border: 1px solid #79B3F5;
+    background: none;
+    color: #79B3F5;
+}
+input.btn1:hover{
+    background-color: #79B3F5;
+    color: white;
+}
+
+.desk-icons2{
+    position: absolute;
+    background-image: url(zoho-images/zp-global-icon-sprite-2x.png);
+    background-size: 960px auto;
+    left: -10px;
+    width: 64px;
+    height: 64px;
+    background-position-x: -192px;
+    background-position-y:0;
+}
+.desk-icons3{
+    position: absolute;
+    background-image: url(zoho-images/zp-global-icon-sprite-2x.png);
+    background-size: 960px auto;
+    left: -10px;
+    width: 64px;
+    height: 64px;
+    background-position-x: -64px;
+    background-position-y: 0px;
+}
+.desk-icons4{
+    position: absolute;
+    background-image: url(zoho-images/zp-global-icon-sprite-2x.png);
+    background-size: 960px auto;
+    left: -10px;
+    width: 64px;
+    height: 64px;
+    background-position-x: 0px;
+    background-position-y: -290px;
+}
+
+
+
+
+.second-image1 {
+    position: absolute;
+    background-image: url(zoho-images/zp-global-icon-sprite-2x.png);
+    background-position-x: -962px;
+    height: 76px;
+    background-position-y: 0px;
+    background-size: 1200px 544px;
+    background-repeat: no-repeat;
+    top: 100px;
+    transform: translate(20%, 10px);
+    padding-top: 100px;
+    text-align: center;
+    width: 76px;
+    left: 45px;
+}
+
+
+.new-icons1{
+    background-position: -64px -160px;
+}
+.new-icons2{
+    background-position: -833px 0;
+}
+.new-icons3{
+    background-position: -706px 0px;
+}
+.new-icons4{
+    background-position: -896px 0px;
+}
+.crm0{
+        background: linear-gradient(to right,#ffeded 0%,#fff 100%);
+}
+
+
+
+.container4{
+    border: 1px solid #efefef;
+    width: 90%;
+    margin: auto;
+    height: auto;
+}
+.con4{
+    display: flex;
+    flex-direction: row;
+    padding:40px 30px 30px 30px;
+    border-bottom: 1px solid #efefef;
+}
+.first-con4{
+    width: 15%;
+    height: auto;
+}
+.first-con4 .t-span{
+    background-position:-669px 28px !important;
+    background-size: auto 66px !important;
+    position: relative;
+    top: 39px;
+    width: 60px;
+}
+.second1{
+    width: 85%;
+}
+.second1 p{
+    font-size: 18px;
+    line-height: 25px;
+    padding:40px 0px 32px 0px;
+}
+.second1 a {
+    color: #02A9F5;
+    text-decoration: none;
+    border-bottom: 1px solid #02A9F5;
+}
+
+
+
+.container-part{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.con5{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 30px 34px;
+}
+.first1{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.first1 .t-span1{
+    background-position:-2px 0px !important;
+    background-size: auto 66px !important;
+    position: absolute;
+    top: 0px;
+    width: 67px;
+    left: -12px;
+    /* margin-left: 40px; */
+}
+.first1 .t-span2{
+    background-position: -69px 0 !important;
+    background-size: auto 66px !important;
+    position: absolute;
+    left: -12px;
+    top: 0px;
+    width: 60px;
+    left: -12px;
+    
+}
+.first1 .t-span3{
+    background-position: -131px 0 !important;
+    background-size: auto 66px !important;
+    position: absolute;
+    top: 0px;
+    width: 66px;
+    left: -12px;
+}
+.first1 .t-span4{
+    background-position: -732px 0 !important;
+    background-size: auto 66px !important;
+    position: absolute;
+    top: 0px;
+    width: 60px;
+    left: -12px;
+}
+.first1 .t-span5{
+    background-position: -341px 0 !important;
+    background-size: auto 66px !important;
+    position: absolute;
+    top: 0px;
+    width: 60px;
+    left: -12px;
+}
+.first1 .t-span6{
+    background-position: -198px 0 !important;
+    background-size: auto 66px !important;
+    position: absolute;
+    top: 0px;
+    width: 60px;
+    left: -12px;
+}
+.first1 .t-span7{
+    background-position: -854px 0 !important;
+    background-size: auto 66px !important;
+    position: absolute;
+    top: 0px;
+    width: 60px;
+    left: -12px;
+}
+.second1 p{
+    font-size: 15px;
+    line-height: 25px;
+    padding: 15px 0px 15px 0px;    
+}
+.container-part h4{
+    margin-top: 100px;
+    font-size: 21px;
+}
+span#odd:hover {
+    transform: rotate(45deg) scale(1.1,1.1);
+}
+
+
+
+
+.overall-zoho-all-apps{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* .zoho-all-apps1>div{ 
+    border-left: none !important;
+    border-bottom: none !important;
+}
+.zoho-all-apps2>div{ 
+    border-left: none !important;
+    border-bottom: none !important;
+}
+.zoho-all-apps3>div{ 
+    border-bottom: none !important;
+    border-right: none  !important;
+} */
+#zoho-all-apps-font-size {
+    font-size: 10px;
+    font-weight: 100;
+    padding-top: 10px;
+    color: #716060;
+}
+.overall-zoho-all-apps>div{
+    height: auto;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.zoho-all-apps1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(8,1fr);
+    justify-content: center;   
+}
+.zoho-all-apps1>div:nth-last-child(1){
+    border: none;
+}
+.zoho-all-apps1>div{
+    border: 1px solid #e5e5e5;
+    padding: 35px 10px 0px;   
+}
+p#paragraph4 {
+    max-width: 70%;
+    margin: 0px auto 10px;
+    color: #333;
+    line-height: 25px;
+    font-size: 15px;
+}
+h4#heading4 {
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0px 0px 10px;
+}
+.zoho-grid-l1{
+    grid-area: 1/1/2/4;
+}
+.zoho-grid-l2{
+    grid-area: 2/1/3/3;
+    padding-top: 5px;
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+.image1 {
+    background-image: url(zoho-images/zp-global-icon-sprite-2x.png);
+    width: 135px;
+    transform: scale(0.509);
+    height: 83px;
+    margin: auto;
+}
+.grid-l2-f1{
+    background-position: -252px -21px;
+    transform: scale(0.509);
+}
+
+
+
+
+
+.image2{
+    background-image: url(zoho-images/zp-global-icon-sprite-2x.png);
+    width: 32px;
+    height: 32px;
+    /* transform: scale(1.1); */
+    margin: auto;
+    background-size: 960px auto;
+    margin-top: 20px; 
+}
+
+
+
+
+#zoho-all-apps-fonts{
+    font-size: 14px;
+    font-weight: 500;
+}
+#zoho-all-apps-font-size{
+    font-size: 9px;
+    font-weight: 100;
+}
+
+
+
+
+
+.zoho-grid-l3{
+    grid-area: 2/3/3/4;
+    /* border-bottom: 1px solid #e5e5e5; */
+}
+.grid-l2-f2{
+    background-position: 0px -126px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.zoho-grid-l4{
+    grid-area: 3/1/4/2;
+}
+.grid-l2-f3{
+    background-position: -320px -64px;
+}
+
+
+
+
+
+.zoho-grid-l5{
+    grid-area: 3/2/4/3;
+}
+.grid-l2-f4{
+    background-position:-128px -64px;
+}
+
+
+
+.zoho-grid-l6{
+    grid-area: 3/3/4/4;
+}
+.grid-l2-f5{
+    background-position:-160px -64px;
+}
+
+
+
+.zoho-grid-l7{
+    grid-area: 4/1/5/2  !important;
+}
+.grid-l2-f6{
+    background-position:-192px -64px;
+}
+
+
+
+.zoho-grid-l8{
+    grid-area: 4/2/5/3;
+}
+.grid-l2-f7{
+    background-position:-224px -64px;
+}
+
+
+
+.zoho-grid-l9{
+    grid-area: 4/3/5/4;
+}
+.grid-l2-f8{
+    background-position:-256px -64px;
+}
+
+
+
+.zoho-grid-l10{
+    grid-area: 5/1/6/2;
+}
+.grid-l2-f9{
+    background-position:-288px -64px;
+}
+
+
+
+.zoho-grid-l11{
+    grid-area: 5/2/6/3;
+}
+.grid-l2-f10{
+    background-position:-352px -64px;
+}
+
+
+
+.zoho-grid-l12{
+    grid-area: 5/3/6/4;
+}
+.grid-l2-f11{
+    background-position:-96px -64px;
+}
+
+
+
+.zoho-grid-l13{
+    grid-area: 6/1/7/2;
+}
+.grid-l2-f12{
+    background-position:-512px -96px;
+}
+
+
+
+.zoho-grid-l14{
+    grid-area: 6/2/7/3;
+}
+.grid-l2-f13{
+    background-position:-481px -96px;
+}
+
+
+.zoho-grid-l15{
+   grid-area: 6/3/7/4;
+}
+.grid-l2-f14{
+    background-position:-704px -96px;
+}
+
+.zoho-grid-l16{
+    grid-area: 7/1/8/2;
+}
+.grid-l2-f15{
+    background-position:-735px -96px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.zoho-all-apps2{
+    display: grid;
+    /* border-right: 1px solid #e5e5e5; */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(8,1fr);
+    justify-content: center;
+}
+.zoho-all-apps2>div{
+    border:1px solid #e5e5e5;   
+    padding: 35px 10px 0px;
+}
+.zoho-grid-c1{
+    grid-area: 1/1/2/4;
+}
+.zoho-grid-c2{
+    grid-area: 2/1/3/3;
+}
+.grid-c2-f1{
+    background-position: -640px -2px;
+    transform: scale(0.509);
+    /* margin-top: -33px; */
+    height: 124px;
+}
+.desk{
+    margin-top: -20px;
+}
+#grid-c2-image{
+    margin-top: -20px;
+}
+.zoho-grid-c3{
+    grid-area: 2/3/3/4;
+}
+.grid-c2-f2{
+    background-position: -192px -96px;
+}
+
+
+.zoho-grid-c4{
+    grid-area: 3/1/4/2;
+}
+.grid-c2-f3{
+background-position: -32px -127px;
+}
+.zoho-grid-c5 {
+    grid-area: 4/1/5/4;
+}
+.zoho-grid-c6 {
+    grid-area: 5/1/6/3;
+}
+.grid-c2-f4{
+    background-position: -121px 0px;    
+    height: 120px;
+}
+.zoho-grid-c7{
+    grid-area: 5/3/6/4;
+}
+.grid-c2-f5{
+    background-position: -448px -64px;
+}
+.zoho-grid-c8{
+    grid-area: 6/1/7/2;
+}
+.grid-c2-f6{
+    background-position: -480px -64px;
+}
+
+.zoho-grid-c9{
+    grid-area: 6/2/7/3;
+}
+.grid-c2-f7{
+    background-position: -512px -64px;
+}
+.zoho-grid-c10{
+    grid-area: 6/3/7/4;
+}
+.grid-c2-f8{
+    background-position: -544px -64px;
+}
+
+.zoho-grid-c11{
+    grid-area: 7/1/8/2;
+}
+.grid-c2-f9{
+    background-position: -576px -64px;
+}
+.zoho-grid-c12{
+    grid-area: 7/2/8/3;
+}
+.grid-c2-f10{
+    background-position: -672px -96px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.zoho-all-apps3{
+    display: grid;
+    /* border: 1px solid black; */
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(8,1fr);
+    justify-content: center;
+    /* align-items: center; */
+}
+.zoho-all-apps3>div{
+    border: 1px solid #e5e5e5;
+    padding: 35px 10px 0px;
+}
+
+.zoho-grid-r1{
+    grid-area: 1/1/2/4;
+}
+
+
+.zoho-grid-r2{
+    grid-area: 2/1/3/3;
+}
+.grid-r2-f1{
+    background-position: -511px -11px;
+    height: 106px;
+    margin-top: -10px;
+}
+.mail{
+    margin-top: -10px;
+}
+
+
+
+.zoho-grid-r3{
+    grid-area: 2/3/3/4;
+}
+.grid-r2-f2{
+    background-position: 0px -96px;
+}
+
+
+
+.zoho-grid-r4{
+    grid-area: 3/1/4/2;
+}
+.grid-r2-f3{
+    background-position: -672px -64px;
+}
+
+
+
+.zoho-grid-r5{
+    grid-area:3/2/4/3;
+}
+.grid-r2-f4{
+    background-position: -450px -128px;
+}
+
+
+
+
+.zoho-grid-r6{
+    grid-area: 3/3/4/4;
+}
+.grid-r2-f5{
+    background-position: -768px -96px;
+}
+
+
+
+.zoho-grid-r7{
+    grid-area: 4/1/5/2;
+}
+.grid-r2-f6{
+    background-position: -704px -64px;
+}
+
+
+.zoho-grid-r8{
+    grid-area: 4/2/5/3;
+}
+.grid-r2-f7{
+    background-position: -736px -64px;
+}
+
+
+
+.zoho-grid-r9{
+    grid-area: 4/3/5/4;
+}
+.grid-r2-f8{
+    background-position: -768px -64px;
+}
+
+
+
+.zoho-grid-r10{
+    grid-area: 5/1/6/2;
+}
+.grid-r2-f9{
+    background-position: -800px -64px;
+}
+
+
+
+.zoho-grid-r11{
+    grid-area: 5/2/6/3;
+}
+.grid-r2-f10{
+    background-position: -832px -64px;
+}
+
+
+.zoho-grid-r12{
+    grid-area: 5/3/6/4;
+}
+.grid-r2-f11{
+    background-position:-864px -64px;
+}
+
+
+
+.zoho-grid-r13{
+    grid-area: 6/1/7/2;
+}
+.grid-r2-f12{
+   
+    background-position: -896px -64px;  
+}
+
+
+
+.zoho-grid-r14{
+    grid-area: 6/2/7/3;
+}
+.grid-r2-f13{
+    background-position: -928px -64px;
+}
+
+
+
+.zoho-grid-r15{
+    grid-area: 6/3/7/4;
+}
+.grid-r2-f14{
+    background-position: -32px -96px;
+}
+
+.zoho-grid-r16{
+    grid-area: 7/1/8/2;
+}
+.grid-r2-f15{
+    background-position: -64px -96px;
+}
+
+
+.zoho-grid-r17{
+    grid-area: 7/2/8/3;
+}
+.grid-r2-f16{
+    background-position: -96px -96px;
+}
+
+.zoho-grid-r18{
+    grid-area: 7/3/8/4;
+}
+.grid-r2-f17{
+    background-position: -256px -128px;
+}
+
+.zoho-grid-r19{
+    grid-area: 8/1/9/2;
+}
+.grid-r2-f18{
+    background-position: -289px -128px;
+}
+
+
+.zoho-grid-r20{
+    grid-area: 8/2/9/3;
+}
+.grid-r2-f19{
+    background-position: -354px -128px;
+}
+
+.zoho-grid-r21{
+    grid-area: 8/3/9/4;
+}
+.grid-r2-f20{
+    background-position: -898px -96px;
+}
+
+
+
+
+
+.overall-head1{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.zoho-all-apps11>div{
+    padding: 35px 10px 0px;
+}
+
+
+
+.zoho-all-apps11{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    text-align: center;
+}
+.zoho-grid-ll1{
+    text-align:center;
+}
+
+.zoho-grid-ll2 .zoho-img1{
+    background-image: url(zoho-images/zp-global-icon-sprite-2x.png);
+    background-position: -358px 36px;
+    height: 115px;
+    width: 66px;
+    transform: scale(1.0);
+    background-size: 904px 440px;
+    margin: auto;
+    margin-top: -25px;
+}
+.zoho-grid-l3 .zoho-img2{
+    background-position: -352px -96px;
+    transform: scale(1.1);
+}
+
+
+.zoho-grid-l4 .zoho-img3{
+    background-position: -640px -96px;
+    transform: scale(1.1);
+}
+
+.zoho-grid-l5 .zoho-img4{
+    background-position: -160px -127px;
+    transform: scale(1.1);
+}
+.zoho-grid-ll6{
+    grid-area: 4/1/5/4;
+}
+.zoho-grid-ll7{
+    grid-area: 5/2/6/3 !important;
+}
+.zoho-grid-l7 .zoho-img5{
+    background-image: url(zoho-images/zp-global-icon-sprite-2x.png);
+    background-position: 2px -270px;
+    height: 71px;
+    width: 66px;
+    transform: scale(1.2);
+    background-size: 904px auto;
+    margin: auto;
+}
+
+
+
+
+
+.zoho-all-apps22{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    text-align: center;
+    /* align-items: center; */
+}
+.zoho-im1{
+    background-position: -1017px 0;
+}
+.zoho-im2{
+    background-position: -224px -96px;
+}
+.zoho-im3{
+    background-position: -256px -96px;
+}
+.zoho-im4{
+    background-position: -576px -96px;
+}
+.zoho-im5{
+    background-position: -65px -127px;
+}
+.zoho-im6{
+    background-position: -288px -96px;
+}
+.zoho-im7{
+    background-position: -832px -96px;
+}
+.zoho-im8{
+    background-position: -864px -96px;
+}
+.zoho-im9{
+    background-position: -192px -128px;
+}
+.zoho-grid-cc3{
+    grid-area: 3/1/4/2;
+}
+.zoho-grid-cc4{
+    grid-area: 3/2/4/3;
+}
+.zoho-grid-cc5{
+    grid-area: 3/3/4/4;
+}
+
+
+.zoho-grid-cc6{
+    grid-area: 4/1/5/2;
+}
+.zoho-grid-cc7{
+    grid-area: 4/2/5/3;
+}
+.zoho-grid-cc8{
+    grid-area: 4/3/5/4;
+}
+
+.zoho-grid-cc9{
+    grid-area: 5/1/6/2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.zoho-all-apps33{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    text-align: center;
+    /* align-items: center; */
+}
+.z-g-21{
+    grid-area: 2/1/3/3;
+}
+.zoho-i1{
+    background-position: 1529px -6px;
+    margin-top: -18px;
+}
+h6#zoho-all-apps-fonts\ non{
+    margin-top: -26px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.z-g-31{
+    grid-area: 2/3/3/4;
+}
+.zoho-i2{
+    background-position: -416px -96px;
+}
+.z-g-4r{
+    grid-area: 3/1/4/2;
+}
+.zoho-i3{
+    background-position: -544px -96px;
+}
+.z-g-5r{
+    grid-area: 3/2/4/3;
+}
+.zoho-i4{
+    background-position: -384px -128px;
+}
+.z-g-6r{
+    grid-area: 4/1/5/4;
+}
+
+.z-g-7r{
+    grid-area: 5/1/6/3;
+}
+.zoho-i5{
+    background-image: url(zoho-images/zp-global-icon-sprite-2x.png);
+    height: 55px;
+    width: 60px;
+    transform: scale(1.2);
+    background-size: 904px auto;
+    margin: auto;
+    background-position: -605px -6px;
+
+}
+.z-g-8r{
+    grid-area: 5/3/6/4;
+}
+.zoho-i6{
+    background-position: -540px -128px;
+}
+.z-g-9r{
+    grid-area: 6/1/7/2;
+}
+.zoho-i7{
+    background-position: -482px -129px;
+}
+.two-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.one{
+    max-width: 50%;
+    height: auto;
+    margin-right: 2%;
+    position:relative;
+}
+.one img{
+    width: 100%;
+    height: 250px;
+}
+.add1{
+    position:absolute;
+    text-align: center;
+    top: 60px;
+}
+.add1 >p{
+    text-align: center;
+    font-variant-caps: petite-caps;
+    color: #ffd600;
+    letter-spacing: 2px;
+    font-size: 17px;
+    margin-top: -35px;
+    margin-bottom: 30px;
+}
+.add1 .add-img{
+    width: 100%;
+    height: 100px;
+}
+.add1 #in{
+    padding: 10px 15px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+}
+.two{
+    max-width: 50%;
+    height: auto;
+    position: relative;
+}
+.two img{
+    width: 100%;
+    height: 250px;
+}
+.add2{
+    text-align: center;
+    margin-top: -200px;
+    color: white;
+}
+.add2 h2{
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.add2 img{
+    width: 225px;
+    height: 215px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.add2 #in{
+    margin-top: 20px;
+    padding: 10px 15px;
+    color: red;
+    background: transparent;
+    border: 1px solid red;
+}
+h3{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.divide-flex1{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+}
+.first-flex{
+    height: 300px;
+    width: 50%;
+}
+.first-flex> #pic{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.first-flex h6{
+    font-size: 18px;
+    position: relative;
+    width: 500px;
+    top: -140px;
+    padding: 30px 0px 30px 15px;
+    color: white;
+    line-height: 30px;
+}
+.first-flex p{
+    font-size: 15px;
+    position: relative;
+    width: auto;
+    top: -190px;
+    padding: 30px 0px 30px 15px;
+    color: white;
+}
+.first-flex p span{
+    font-size: 13px;
+}
+.first-flex a input{
+    top: -240px;
+    left: -30px;
+    font-size: 13px;
+    padding: 5px 15px;
+    background: red;
+    color: white;
+    float: right;
+    position: relative;
+    font-weight: bold
+}
+.second-flex{
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+}
+.div-1{
+    justify-content: space-evenly;
+    display: flex;
+    margin: 30px 0px 30px;
+}
+.div-2{
+    justify-content: space-evenly;
+    display:flex;
+    margin: 30px 0px 30px;
+}
+.div-3{
+    margin: 30px 0px 30px;
+}
+.div-3>a{
+    margin: 0px 0px 0px 80px;
+}
+.logo1{
+    display: flex;
+    background-image: url('zoho-images/zoho-customers-top-brands.png');
+    background-repeat: no-repeat;
+    background-size: 1045px auto;
+    height: 40px;
+    width: 118px;
+    background-position: -936px 0px;
+    flex-direction: row;
+}
+.logo2{
+    height: 40px;
+    width: 68px;
+    background-position: -143px 0px;
+}
+.logo3{
+    height: 40px;
+    width: 107px;
+    background-position: -430px -40px;
+}   
+.log1{
+    height: 40px;
+    width: 122px;
+    background-position: -112px -36px;
+}
+.log2{
+    height: 40px;
+    width: 133px;
+    background-position: -112px -73px;
+}
+.log3{
+    height: 40px;
+    width: 33px;
+    background-position: -420px 0px;
+}
+.container-part1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+}
+.cont1{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 30px 34px;
+}
+#p1{
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+#coll{
+    color: #29a9f5;
+}
+#n1{
+    font-size: 15px;
+}
+.footer{
+    background: #333333;
+    width: 100%;
+}
+.foote1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#ba{
+    display: flex;
+    flex-direction: column;
+    color: #cccccc;
+    padding: 50px 0px 50px 0px;
+}
+#fs1{
+    font-size: 22px;
+    font-weight: 500;
+    padding:15px 0px 15px;
+}
+#ba>a{
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 0px 10px 0px;
+}
+#search{
+    text-align: center;
+}
+a.margin{
+    margin-left: -10px;
+}
+#search input{
+    outline: none;
+    width: 70%;
+    padding: 5px 10px;
+    background: transparent;
+    border: 1px solid #666;
+    height: 35px;
+} 
+.search .text{
+    border: 1px solid #666;
+    color: #fff;
+}
+button .f-s{
+    height: 100%;
+    width: 48px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+button{
+    background: transparent;
+    position: absolute;
+}
+button p{
+    background:#333333 url(zoho-images/help-new-sprite.png) no-repeat -112px -12px/auto 40px;
+    display: inline-block;
+    width: 30px;
+    height: 35px;
+    border:1px solid #666;
+}
+.link{
+    width: 70%;
+    margin: auto;
+    font-size: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    justify-content:center;
+}
+.link a{
+    color: #cccccc;
+    text-decoration: none;
+    border-right: 1px solid #cccccc;
+    padding: 0 10px 0 10px;
+    margin-top: 10px;
+}
+.link a.demo{
+    border-right: none;
+}
+.zoho-corp{
+    text-align: center;
+    color: #cccccc;
+    font-size: 10px;
+}
+.zoho-corp p{
+    letter-spacing: 0.5px;
+}
+
+.earth-iconss::before{
+    background-position-x: -293px;
+}
+.social-apps{
+    text-align: center !important;
+}
+.social-apps a{
+    background-image: url('zoho-images/zh-sprite-2x-new.png');
+    background-size: auto 110px;
+    width: 30px;
+    transform: scale(1.1100);
+    height: 30px;
+    margin: 0 5px;
+    background-size: auto 110px;
+    /* background-repeat: no-repeat; */
+    display: inline-block;
+}
+a#icons1{
+    background-position: -737px -76px;
+}
+a#icons2{
+    background-position: -678px -76px;
+}
+a#icons3{
+    background-position: -708px -76px;
+}
+a#icons4{
+    background-position: -767px -76px;
+}
+a#icons5{
+    background-position: -797px -76px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1024px){
+    .earth-icon{
+        display: none;
+    }
+    .overall-zoho-all-apps{
+        width: 90%;
+        height: auto;
+        border: 1px solid #e5e5e5;
+        margin: auto;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+    }
+    .overall-head1{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .overall-split{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .crm1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .crm2{
+        width: 100%;
+        height: auto;
+    } 
+}
+
+
+@media only screen and (max-width:768px){
+    .sub-header{
+        padding: 35px 0px 0px 0px;
+        margin-right: 40px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    a#colors {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .overall-split{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .crm1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topic1 {
+        width: auto;
+        height: 110px;
+        text-align: center;
+        /* transform: translate(-18%, -36px); */
+    }
+    .topic1-span {
+        top: 70px;
+        transform: translate(72%, 10px);
+    }
+    .topic2 {
+        padding: 83px 10px 83px 10px;
+    }
+    .crm2{
+        width: 100%;
+        height: auto;
+    }
+    .grid-wrapper1 {
+        display: -ms-inline-grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 175px;
+        display: flex;
+        flex-direction: column;
+        padding: 25px 0px 0px 0px;
+    }
+    .grid-wrapper1>div {
+        padding: 30px 0px 30px;
+        text-align: center;
+        max-width: 300px;
+        margin: auto;
+    }
+    .grid-w1{
+        border-bottom: none !important; 
+        border-right: none !important; 
+        border-bottom: 1px solid black;
+   }
+   .grid-w4{
+       border-top: none !important; 
+       border-left:  none !important ; 
+   }
+    
+   
+   .con4{
+        display: flex;
+        flex-direction: column;
+        padding:30px;
+    }
+    .first-con4{
+        width:100%;
+        height:110px;
+    }
+    .second-con4{
+        width: auto;
+        text-align: center;
+    }
+    .first-con4 .t-span{
+        background-position:-669px opx !important;
+        background-size: auto 66px !important;
+        position: relative;
+        top: 85px;
+        width: 67px;
+        margin-left:-33px;
+    }
+    .container-part {
+        display: flex;
+        flex-direction: column;
+    }
+    #bottom{
+        border-bottom: 1px solid #efefef;
+    }
+    .two-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .one {
+        max-width: 100%;
+        height: auto;
+        margin-right: 2%;
+    }
+    .two{
+        max-width: 98%;
+        height: auto;
+    }
+}   
+
+
+@media only screen and (max-width: 768px) and (min-width: 480px){
+    .topic1-span {
+        top: 10px;
+        transform: translate(-50%, 10px);
+        left: 50%;
+    }
+    .topic2 {
+        padding: 50px 100px;
+        text-align: center;
+    }
+    .crm1{
+        background-image: linear-gradient(to bottom, #e8f4fe, #f0f6ff, #f6f9ff, #fbfcff, #ffffff);
+    }
+
+    .grid-wrapper1{
+        display: -ms-inline-grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 175px ;
+    }
+    /* .con5 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    } */
+    .con5 {
+        width: 80%;
+        display: flex;
+        margin: auto;
+        flex-direction: row;
+        /* border: 1px solid red; */
+        /* padding: 30px; */
+        margin: auto;
+        padding: 30px 0px 30px 34px;
+    }
+    
+    .first1 .t-span1 {
+        /* background-position: -2px 0px !important;
+        background-size: auto 66px !important;
+        position: absolute;
+        top: 0px; */
+        width: 67px;
+        left: 50%;
+        transform: translate(-50%, 10px);
+    }
+    .container-part h4 {
+        margin-top: 80px;
+        text-align: center;
+        font-size: 19px;
+    }
+    .first1 .t-span1 {
+        width: 60px;
+        left: 50%;
+        transform: translate(-50%, 10px);
+    }
+    .first1 .t-span2 {
+        width: 60px;
+        left: 50%;
+        transform: translate(-50%, 10px);
+    }
+    .first1 .t-span3 {
+        width: 65px;
+        left: 50%;
+        transform: translate(-50%, 10px);
+    }
+    .first1 .t-span4 {
+        width: 60px;
+        left: 50%;
+        transform: translate(-50%, 10px);
+    }
+    .first1 .t-span5 {
+        width: 60px;
+        left: 50%;
+        transform: translate(-50%, 10px);
+    }
+    .first1 .t-span6 {
+        width: 60px;
+        left: 50%;
+        transform: translate(-50%, 10px);
+    }
+    .first1 .t-span7 {
+        width: 60px;
+        left: 50%;
+        transform: translate(-50%, 10px);
+    }
+    .divide-flex1 {
+        display: flex;
+        flex-direction:column;
+        width: 90%;
+        margin: auto;
+    }
+    .first-flex {
+        height: 300px;
+        width: 100%;
+    }
+    .second-flex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .div-1 {
+        justify-content: space-evenly;
+        display: flex;
+        margin: 50px
+        
+    }
+    .div-2 {
+        justify-content: space-evenly;
+        display: flex;
+        margin: 25px
+    }
+    .div-3 {
+        justify-content: space-evenly;
+        display: flex;
+        margin: 50px
+    }
+    .con5 {
+        width: 80%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        margin: auto;
+        padding: 30px 0px 30px 34px;
+    }
+    #p1{  
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:662px){
+    .hide{
+        display: none;
+    }
+    .z-logo{
+        left: 50%;
+        top: 70px;
+        transform: translate(-50%,10px);
+    }
+
+
+    .paragraph{
+        padding-top: 100px;
+    }
+
+
+  
+}
+
+
+@media only screen and (max-width:480px){
+    .z-logo{
+        left: 50%;
+        top: 70px;
+        transform: translate(-50%,10px);
+    }
+    .crm1{
+        background-image: linear-gradient(to bottom, #e8f4fe, #e8f4fe,#f0f6ff, #f6f9ff, #fbfcff, #ffffff);
+    }
+    .crm0{
+        background: linear-gradient(to bottom,#ffeded 0%,#fff 100%);
+    }
+    
+    .sub-header {
+        padding: 30px 0px 0px 0px;
+        font-weight: 100;
+        font-size: 12px;
+    }
+    .paragraph p{
+        max-width: 350px;
+        font-size: 17px;
+    }
+
+    .topic1-span {
+        top: 10px;
+        transform: translate(-50%, 10px);
+        left: 50%;
+    }
+    .topic2 {
+        padding: 35px 40px;
+        text-align: center;
+    }    .con5 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0px 30px 0px;
+        text-align: center;
+    }
+    .second1{
+        width: 100%;
+    }
+    .first1 .t-span1 {
+        background-position: -2px 0px !important;
+        background-size: auto 66px !important;
+        position: absolute;
+        top: 0px;
+        width: 67px;
+        left: -12px; 
+    }
+    #odd {
+        width: 64px;
+        left: 50%;
+        transform: translate(-50%, 10px);
+    }
+    .divide-flex1 {
+        display: flex;
+        flex-direction:column;
+        width: 90%;
+        margin: auto;
+    }
+    .first-flex {
+        height: 300px;
+        width: 100%;
+    }
+    .second-flex {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .first-flex h6 {
+        font-size: 18px;
+        position: relative;
+        width: auto;
+        top: -140px;
+        padding: 0px 0px 30px 15px;
+        color: white;
+        line-height: 30px;
+    }
+    .div-1 {
+        justify-content: space-evenly;
+        display: flex;
+        margin: 30px 0px 30px 0px;
+    }
+    .div-2 {
+        justify-content: space-evenly;
+        display: flex;
+        margin: 25px 0px 25px 0px;
+    }
+    .div-3 {
+        justify-content: space-evenly;
+        display: flex;
+        margin: 50px
+    }
+    .div-3>a {
+        margin: 0px 0px 0px 0px;
+    }
+    .links .link{
+        display: none;
+    }
+    .foote1 {
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-evenly; */
+    }
+    #ba {
+        display: flex;
+        flex-direction: column;
+        /* flex-grow: 1; */
+        color: #cccccc;
+        padding: 50px 0px 20px 50px;
+    }
+    a.margin {
+        margin-left: 0px;
+    }
+    .logo2{
+        display: none;
+    }
+    .log2{
+        display: none;
+    }
+}
