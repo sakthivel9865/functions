@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.overall{
+    font-family: 'Roboto', sans-serif;
+    max-width: 100%;
+    min-height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.two-cal{
+    background-color: #D6DAE0;
+    width: 1000px;
+    min-height: 666px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    color: white;
+    width: 280px;
+    height: 350px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: auto;
+}
+.head3 .red{
+    color: red;
+}
+.head2{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0px 0px 0px;
+    align-items: center;
+}
+.head2>.same{
+    box-shadow: 0 0 5pt 0.5pt #d3d3d3;
+    background: none;
+}
+#border{
+    border: none;
+    color: black;
+}
+.head2>input{
+    padding: 6px 10px 6px 10px;
+    border-radius: 7px;
+    border: none;
+    font-size: 16px;
+}
+.head3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 17px 0px 0px 4px;
+    text-align: center;  
+} 
+.head3>div{
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+    padding: 8px 8px;
+    border-radius: 10px;
+}
+.head3 > .reee{
+    font-size: 15px;
+}
+/* .head3 > div:focus{
+    border: 1px solid red;
+    background-color: yellow;
+} */
+.box2{
+    color: white;
+    width: 250px;
+    height: 375px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-top: 70px;
+}
+.newwindow{
+    background: rgb(132, 138, 137);
+    /* border: 1px solid blue; */
+    border: none;
+    color: white;
+}
