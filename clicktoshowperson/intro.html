@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="introduction.js"></script>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;            
+    }
+    body{
+        background: #efefef;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 36px;
+        font-family: sans-serif;
+        font-weight: 500;
+        margin: 10px 0px 40px 0px;
+    }
+
+    .container {
+        padding: 30px;
+        width: 1200px;
+        height: auto;
+        display: grid;
+        grid-gap: 10px;
+        border: 1px solid black;
+        grid-template-columns: repeat(6, 180px);
+        grid-template-rows: repeat(5, 90px);
+        background: #bbbcbc;
+        margin: auto;
+    }
+
+    .head {
+        /* border: 1px solid red; */
+        background-color:#f8f9b2;
+        display: grid;
+        width: 180px;
+        height: 90px;
+        color: black;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .head div {
+        border: 1px solid blue;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    #selected {
+        display: none;
+    }
+
+    button {
+        padding: 10px 15px;
+        background: cornflowerblue;
+        border: none;
+        font-size: 16px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+        cursor: pointer;
+        color: white;
+        border-radius: 5px;
+    }
+</style>
+
+<body>
+
+    <h1>Click to create person details </h1>
+    <button onclick="mybox()">create person details</button>
+
+    <div class="container">
+        <div class="head" id="selected">
+            <div class="name">sakthi</div>
+            <div class="age">24</div>
+            <div class="dob"></div>
+            <div class="b_group"></div>
+        </div>
+    </div>
+</body>
+
+</html>
