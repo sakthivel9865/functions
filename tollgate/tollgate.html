@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tollgate.css">
+    <script src="tollgate.js"></script>
+    <title>Toll-Gate</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="queue1">
+            <div onclick="append_element(this)" id="tn2091" class="firstdiv" ></div>
+            <div onclick="append_element(this)" id="tn2092" class="firstdiv"></div>
+            <div onclick="append_element(this)" id="tn2093" class="firstdiv"></div>
+            <div onclick="append_element(this)" id="tn2094" class="firstdiv"></div>    
+            <div onclick="append_element(this)" id="tn2095" class="firstdiv"></div>    
+        </div>
+        <div class="in">
+        </div>
+        <div class="out">
+        </div>
+        <div class="queue2">
+            <!-- <div onclick="append_element1(this)" class="firstdivs">4</div>
+            <div onclick="append_element1(this)" class="firstdivs">3</div>
+            <div onclick="append_element1(this)" class="firstdivs">2</div>
+            <div onclick="append_element1(this)" class="firstdivs">1</div> -->
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--
+
+<div class="container">
+
+    <div class="queue1">
+        <div onclick="append_element(this)" class="firstdiv">1</div>
+        <div onclick="append_element(this)" class="firstdiv">2</div>
+        <div onclick="append_element(this)" class="firstdiv">3</div>
+        <div onclick="append_element(this)" class="firstdiv">4</div>
+        <div onclick="append_element(this)" class="firstdiv">5</div>
+        <div onclick="append_element(this)" class="firstdiv">6</div>
+        <div onclick="append_element(this)" class="firstdiv">7</div>
+        <div onclick="append_element(this)" class="firstdiv">8</div>
+        <div onclick="append_element(this)" class="firstdiv">9</div>
+        <div onclick="append_element(this)" class="firstdiv">10</div> -->
+    <!-- </div>
+    <div class="in"> -->
+        <!-- <a class="in_first1">Entry</a> -->
+        <!-- <div class="vehiclediv"></div> -->
+        <!-- <a class="out_first">TollGate</a> -->
+    <!-- </div>
+    <div class="out"> -->
+        <!-- <a class="in_first2">Exit</a> -->
+
+        <!-- <a class="out_first  if">TollGate</a> -->
+    <!-- </div>
+    <div class="queue2">
+        <div onclick="append_element1(this)" class="firstdivs">4</div>
+        <div onclick="append_element1(this)" class="firstdivs">3</div>
+        <div onclick="append_element1(this)" class="firstdivs">2</div>
+        <div onclick="append_element1(this)" class="firstdivs">1</div>
+    </div>
+
+</div> -->
+
+
+
+
+
+
+
+<!-- function append_element(element) {
+    document.querySelector(".in").appendChild(element);
+    setTimeout(() => {
+        element.classList.add("middle");
+    }, 1000);
+    
+    element.addEventListener("transitionend", function () {
+        element.classList.add("topside");
+        element.addEventListener("transitionend", topfunction);
+    })
+    function topfunction() {
+        document.querySelector(".queue2").appendChild(element);
+        element.style.bottom = 0;   
+        element.addEventListener("click", backtobottom);
+        function backtobottom(){
+            document.querySelector(".out").appendChild(element);
+            setTimeout(() => {
+                element.classList.add("mid1")
+            }, 1000);
+        }
+        setInterval(() => {
+            element.classList.add("mid2")
+        }, 6000);
+    } 
+    element.addEventListener("transitionend",oldstage);
+    function oldstage(){
+        document.querySelector("queue1").appendChild(element);
+        element.style.top= 0;
+    }
+} -->
