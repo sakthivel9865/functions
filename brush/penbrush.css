@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.brush{
+    width: 100vw;
+    height: 620px;
+    /* border: 1px solid black; */
+}
+input{
+    padding: 15px 15px;
+    font-size:18px;
+}
+.round{
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid green; */
+    border-radius: 50%;
+    top : 0px;
+    left: 0px;
+    position: absolute;
+}
+#rounded{
+    display: none;
+}
