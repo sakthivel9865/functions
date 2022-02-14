@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+        font-family: 'Open Sans', sans-serif;
+    }  
+    .iframe{        
+        width: 230px;
+        height: auto;       
+        overflow-x: hidden; 
+        
+    }
+    .header{
+        display: flex;
+        flex-direction: column;      
+        position: fixed;
+        top:0;
+        left: 0;
+        border: 1px solid #efefef;
+        width: 227px;
+        padding: 10px 0px 10px 20px;  
+        background: #f5f5f5;
+    }
+   
+    .iframecontents{
+        display: flex;
+        flex-direction: column;
+        margin-top: 43px;
+        width: 246px;
+        background: #fff;
+    }
+    .picforiframe{
+        display: flex;
+        /* justify-content: space-evenly; */
+        align-items: center;        
+        height: 40px;
+        padding: 10px 0px;
+    }
+    .pic1{
+        background-image: url(ztaskimages/iframe1.png);        
+        width: 33px;
+        height: 33px;
+        background-size: auto 33px;
+        background-position-x: 33px;
+        /* margin: 0px -15px; */
+    }
+    .pic2{
+        background-image: url(ztaskimages/iframe2.png);        
+        width: 33px;
+        height: 33px;
+        background-size: auto 33px;
+        background-position-x: 33px;
+        /* margin: 0px -15px; */
+    }
+    .pic3{
+        background-image: url(ztaskimages/iframe3.png);
+        height: 31px;
+        width: 33px;
+        background-size: auto 31px;
+        background-position-y: 0px;
+        background-position-x: 33px;
+        /* margin: 0px -15px; */
+    }
+    .pic4{
+        background-image: url(ztaskimages/iframe4.png);        
+        width: 35px;
+        height: 33px;
+        background-size: 35px 33px;
+        background-position-x: 35px;
+        /* margin: 0px -15px; */
+    }
+    .pic5{
+        background-image: url(ztaskimages/iframe5.png);        
+        width: 33px;
+        height: 33px;
+        /* margin: 0px -15px; */
+        background-size: auto 33px;
+        background-position-x: 33px;
+    }
+    .pic6{
+        background-image: url(ztaskimages/second.png);
+        background-size: auto 30px;
+        position: relative;
+        width: 30px;
+        /* margin: 0px -15px; */
+        height: 30px;
+    }
+    .fonts{
+        font-size: 20px;
+        font-family: 'Open Sans';
+        font-weight: 100;
+    }
+    .h4tag{
+        font-size: 14px;
+        font-family: 'Open Sans';
+        font-weight: 100;
+        color: #2faff9;
+    }
+    .picforiframe:hover{
+        background: #eeecec;
+    }
+    .two{
+        background-image: url(ztaskimages/icon.b1b8f25d4071e2c8868de6cff056ecd4.svg);
+        background-size: auto 350px;
+        width: 36px;
+        height: 33px;
+        background-position-x: 265px;
+        background-position-y: 236px;
+    }
+    .one{
+        background-image: url(ztaskimages/icon.b1b8f25d4071e2c8868de6cff056ecd4.svg);
+        background-size: auto 350px;
+        width: 36px;
+        height: 33px;
+        background-position-x: 295px;
+        background-position-y: 236px;
+    }
+    .content1{
+        margin: 0px 20px 0px 25px;
+    }
+    .content3{ 
+        visibility: hidden; 
+    } 
+    .picforiframe:hover .content3{
+        visibility: visible;
+    }
+    
+</style>
+<body>
+
+    <div class="iframe">
+        <div class="header">
+            <h4 class="fonts" style="font-size:18px;color:#4a4848;">My Communities</h4>
+        </div>
+        <div class="iframecontents">
+
+            <div class="picforiframe ifimages1">
+                <div class="content1"><p class="pic1"></p></div>
+                <div class="content2"><h4 class="h4tag">ADAudit Plus</h4></div>
+                <div class="content3"><p class="two" style="margin-left: 25px;"></p></div>                
+            </div>
+
+
+            <div class="picforiframe ifimages2">
+                <div class="content1"><p class="pic2"></p></div>
+                <div class="content2"><h4 class="h4tag">ADSSP</h4></div>
+                <div class="content3"><p class="one"  style="margin-left: 65px;"></p></div>  
+            </div>
+
+            <div class="picforiframe ifimages3">
+                <div class="content1"><p class="pic3"></p></div>
+                <div class="content2"><h4 class="h4tag">Logs Ask</h4></div>
+                <div class="content3"><p class="one"  style="margin-left: 51px;"></p></div>  
+            </div>
+
+            <div class="picforiframe ifimages4">
+                <div class="content1"><p class="pic4"></p></div>
+                <div class="content2"><h4 class="h4tag">Pali</h4></div>
+                <div class="content3"><p class="one"  style="margin-left: 83px;"></p></div>  
+            </div>
+
+            <div class="picforiframe ifimages5">
+                <div class="content1"><p class="pic5"></p></div>
+                <div class="content2"><h4 class="h4tag">Work From Home</h4></div>
+                <div class="content3"><p class="one"  style="margin-left: -9px;"></p></div>  
+            </div>
+            <div class="picforiframe ifimages6">
+                <div class="content1"><p class="pic6"></p></div>
+                <div class="content2"><h4 class="h4tag">ZAsk </h4></div>
+                <div class="content3"><p class="one"  style="margin-left: 80px;"></p></div>  
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+.menu{        
+    margin: auto;
+    width: 100%;
+}
+.menubar{
+    width: 20px;
+    height: 2px;
+    background: black;
+    margin:  5px;
+} -->
