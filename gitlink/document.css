@@ -87,7 +87,7 @@ body{
     display: flex;
     flex-direction: column;
     margin:30px 0px;
-    border: 1px solid  rgb(238, 215, 184);
+    border: 1px solid #efefef;
     background: white;
     position: relative;
     top: 0;
