@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flashcard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="flashcard.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Flash Card</h1>
+        <div class="content flx flx-dir">
+            <div class="pad flx jus-sp">
+                <p>Question</p>
+                <div onclick="closeCont()" class="close"><span class="material-symbols-outlined">cancel</span></div>
+            </div>
+            <div class="div2">
+                <textarea name="" class="textarea area1" cols="30" rows="10"></textarea>
+            </div>
+            <div class="div3 pad">
+                <p>Answer</p>                
+            </div>
+            <div class="div4">
+                <textarea name="" class="textarea area2" cols="30" rows="10"></textarea>
+            </div>
+            <div class="div5 pad">
+                <button onclick="createDiv()" class="btn">Save</button>
+            </div>
+        </div>
+
+        <div class="flashCont pad flx">
+
+        </div>
+        
+    </div>
+</body>
+</html>
