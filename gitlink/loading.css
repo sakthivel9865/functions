@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;        
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+.container_load{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.round{
+    position: relative;
+    width: 150px;
+    height: 150px;        
+    border-radius: 50%;
+    border: 4px solid transparent;
+    /* border-top: 4px solid yellow; */
+    animation: animate1 4s linear infinite;
+}
+@keyframes animate1
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.round::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: yellow;        
+    top:12px ;
+    right: 12px;
+    bottom: 12px;
+    border-top-left-radius: 100%;
+}
+.round:nth-child(2){
+    animation: animate2 4s linear infinite;
+    border-top: 4px solid transparent;
+    border-left: 4px solid #93ff2d;
+    /* animation-delay: 1s; */
+}
+.round:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;   
+    background-color: yellow;
+    top:119px ;
+    right: 112px;
+    border-top-left-radius: 100%;
+}
+@keyframes animate2
+{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.round:nth-child(3){
+    position: absolute;
+    top: -66.66%;       
+}
+.textcolors{
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    bottom: -80px;
+    letter-spacing: 0.15em;
+}
+.textcolors{
+    background: #220702;
+    background: -webkit-repeating-radial-gradient(circle farthest-corner at center center, #d82c0d 0%, #2DFF03 50%, #0818FF 50%, #00FF00 50%, #FFFF08 100%);
+    background: -moz-repeating-radial-gradient(circle farthest-corner at center center, #d82c0d 0%, #2DFF03 50%, #0818FF 50%, #00FF00 50%, #FFFF08 100%);
+    background: repeating-radial-gradient(circle farthest-corner at center center, #d82c0d 0%, #2DFF03 50%, #0818FF 50%, #00FF00 50%, #FFFF08 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
