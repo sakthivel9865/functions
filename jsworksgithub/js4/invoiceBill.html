@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="invoiceBill.js"></script>
+    <link rel="stylesheet" href="invoiceBill.css">
+    <title>Document</title>
+</head>
+
+
+<body onload="defaultEle()">
+    <div class="container flx jus-cen al-cen">
+        <div class="content">
+
+
+            <div class="header">
+                <div class="heading flx jus-sp">
+                    <div>
+                        <span class="color1">INVOICE</span><br>
+                        <p class="color2">01/12/2022</p>
+                    </div>
+                    <div>
+                        <p class="color2">#08 279</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="details">
+
+                <div class="productDetails al-cen height50">
+                    <div><label for="">PRODUCT</label></div>
+                    <div><label for="">UNIT</label></div>
+                    <div><label for="">PRICE</label></div>
+                    <div><label for="">AMOUNT</label></div>
+                    <div><label for="">ACTION</label></div>
+                </div>
+
+                <div class="productVal al-cen">
+
+                </div>
+
+                <div class="productValue flx al-cen height50">                    
+                    <p onclick="addingList()"><span class="material-symbols-outlined" id="plusicon" >
+                        add
+                    </span>                    
+                </p>
+                </div>
+
+            </div>
+
+            <div class="bottomCont flx">
+                <p class="totalPrice">0.00</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

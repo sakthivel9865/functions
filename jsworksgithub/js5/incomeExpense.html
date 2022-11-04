@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="incomeExpense.css">
+    <script src="incomeExpense.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>income_expense</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;        
+    }
+    .contianer{
+        width: 100%;
+        height: 100vh;
+        background-color: #efefef;                        
+    }
+    .header{
+        /* background-image: url('incomeexpense.png'); */
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .headerCont{        
+        width: 50%;
+        height: 50vh;                
+    }
+    .incomeTxt{
+        width: 50%;
+        margin: 0 auto;
+        border: 1px solid black;
+    }
+    .expenseTxt{
+        width: 50%;
+        margin: 0 auto;
+        border: 1px solid black;
+    }
+    .footer{
+        width: 100%;
+        height: 50vh;
+        background-color: blanchedalmond;
+        display: grid;
+        grid-template-rows: 15% auto;
+    }
+    .footer>div{
+        border: 1px solid black;
+    }
+    .middleCont{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .btn{
+        border:none;        
+        display: flex;
+    }
+    .material-symbols-outlined{
+        /* font-size: 35px; */
+    }
+    
+
+    .in_exp{
+        display: grid;
+        grid-template-columns: 30% 30%;        
+    }
+    .in_exp>div{
+        border: 1px solid black;
+    }
+    .overalldiv{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ten{
+        display: none;
+    }
+    .overalldiv:hover .ten{
+        display: flex;
+        transition: ease-in 2s all;
+        justify-content: space-evenly;
+    }
+    .icons_div{
+        display: flex;
+    }
+
+
+    .flx{
+        display: flex;
+    }
+    .jus-sp{
+        justify-content: space-between;        
+    }
+    .jus-even{
+        justify-content: space-evenly;
+    }
+    .txt-algn{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="contianer flx flx-dir">
+        <div class="header flx jus-cen al-cen">
+            <div class="headerCont flx flx-dir jus-even">
+                <div><p class="txt-algn">Available Budget in November 2022:</p></div>
+                <div class="income_expense txt-algn">-0.00</div>
+                <div class="incomeTxt flx jus-sp">
+                    <div> <p>INCOME</p> </div>
+                    <div class="totalIncome">
+                        <p>+0.00</p>                        
+                    </div>
+                </div>
+                <div class="expenseTxt flx jus-sp">
+                    <div> <p>EXPENSE</p> </div>
+                    <p>+-0.00</p>
+                </div>
+            </div>                      
+
+        </div>
+        <div class="footer ">
+
+            <div class="middleCont flx al-cen jus-even">
+                
+                <select id="Operator" >                    
+                    <option value="+">+</option>
+                    <option value="-">-</option>                    
+                </select>  
+
+                <input onfocus="this.value=''" class="inptxt" type="text">
+
+                <input onfocus="this.value=''" class="inptNumber" type="number">
+
+                <button class="btn" onclick="Calculate()">
+                    <span class="material-symbols-outlined">check_circle</span>
+                </button>               
+
+            </div>
+            <div class="in_exp jus-cen">
+                <div class="Income">
+                   <div><p>INCOME</p></div> 
+                </div>
+                <div class="Expense">
+                    <div><p>EXPENSE</p></div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        
+        // operator
+        let selectBox = document.getElementById('Operator');
+        selectBox.addEventListener('change',function () {
+            selectBox.value = this.value;
+            console.log(selectBox.value, "plusicon");
+        } ,false)
+
+        // input text
+        let inptText = document.querySelector('.inptxt');
+        inptText.addEventListener('blur',function(){
+            inptText.value = this.value;
+            // console.log(inptText.value);
+        }, false);
+
+        // input Number
+        let inptNumber = document.querySelector('.inptNumber');
+        inptNumber.addEventListener('blur',function(){
+            inptNumber.value = this.value;
+            // console.log(inptNumber.value);
+        }, false);
+
+        function Calculate(){   
+                                
+            if(inptNumber.value != 0){            
+                console.log(selectBox.value);
+
+                // whole div creation            
+                let overall_div = document.createElement("div");
+                overall_div.className = "overalldiv";
+
+                description_txt = document.createElement("p");
+                description_txt.innerText = inptText.value;
+                overall_div.appendChild(description_txt);            
+
+
+                // iconWhole div
+                icon_div = document.createElement("div");
+                icon_div.className = "icons_div";
+
+
+                innerValue = document.createElement("p");
+                innerValue.innerText = "+" + inptNumber.value + ".00";    
+                icon_div.appendChild(innerValue);                    
+
+                closeIcon = document.createElement("span");
+                closeIcon.className = "material-symbols-outlined ten";
+                closeIcon.innerText = "cancel"
+                icon_div.appendChild(closeIcon);
+                
+
+                overall_div.appendChild(icon_div);
+
+                var a = document.querySelector(".Income");
+                a.appendChild(overall_div);
+
+
+            }
+            else{
+                alert("Please fill the fields");
+            }
+
+            
+        }
+    </script>
+</body>
+</html>

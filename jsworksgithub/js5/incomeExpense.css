@@ -1,0 +1,12 @@
+.flx{
+    display: flex;    
+}
+.jus-cen{
+    justify-content: center;    
+}
+.al-cen{
+    align-items: center;
+}
+.flx-dir{
+    flex-direction: column;
+}

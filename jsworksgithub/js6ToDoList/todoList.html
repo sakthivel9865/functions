@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>ToDo List</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+        display: grid;
+        grid-template-rows: 100px 200px auto;
+    }
+
+    .header {
+        border-bottom: 1px solid #615757;
+    }
+
+    .taskCreation,
+    .listofTask {
+        border: 1px solid black;
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .listofTask {
+        border: 1px solid black;
+        width: 60%;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 50px 50px auto;
+        padding: 15px;
+    }
+
+    .task {
+        /* background-color: #efefef; */
+    }
+
+    .flx-grow {
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .bg-gray {
+        background-color: #efefef;
+    }
+
+    .flx {
+        display: flex;
+    }
+
+    .flx-dir {
+        flex-direction: column;
+    }
+
+    .jus-cen {
+        justify-content: center;
+    }
+
+    .jus-sp {
+        justify-content: space-evenly;
+    }
+
+    .al-cen {
+        align-items: center;
+    }
+
+    .gap15 {
+        gap: 15px;
+    }
+
+    .list_of_Task {
+        width: 100%;
+        height: 100px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .todoList_Div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid black;
+    }
+
+    .image_overall_Div {
+        display: flex;
+        align-items: center;
+        /* width: 80px; */
+        justify-content: space-evenly;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="header flx jus-cen al-cen">
+            <h1>ToDo List</h1>
+        </div>
+
+        <div class="taskCreation flx flx-dir jus-sp al-cen">
+            <input onfocus="this.value=''" class="inpValue" type="text">
+            <button onclick="moveComplete()">Add Task</button>
+        </div>
+
+        <div class="listofTask gap15">
+            <div class="task bg-gray flx jus-cen al-cen">Tasks</div>
+            <div class="flx jus-cen gap15">
+                <p class="Incompleted flx-grow flx jus-cen al-cen bg-gray">Incomplete</p>
+                <p class="completed flx-grow flx jus-cen al-cen bg-gray">Completed</p>
+            </div>
+            <div class="list_of_Task gap15">
+                <div class="inCom"></div>
+                <div class="Comp"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        function addTask(input_Val, ticksymbol, incomplete_space) {
+
+            todoList_Div = document.createElement("div");
+            todoList_Div.className = "todoList_Div";
+
+            text_Div = document.createElement("p");
+            text_Div.innerText = input_Val;
+            todoList_Div.appendChild(text_Div);
+
+
+            // image overall div
+            Icon_Div = document.createElement("div");
+            Icon_Div.className = "image_overall_Div"
+
+            // firstimage
+            tick_img = document.createElement("span");
+            tick_img.className = "material-symbols-outlined";
+            tick_img.innerText = ticksymbol;
+
+            tick_img.addEventListener("click", function (element) {
+                if (tick_img.innerText == "check") {
+                    demo1(element)
+                }
+                else {
+                    demo2(element)
+                }
+            })
+
+            Icon_Div.appendChild(tick_img);
+
+            // secondimage
+            delete_img = document.createElement("span");
+            delete_img.className = "material-symbols-outlined";
+            delete_img.innerText = "delete";
+
+            Icon_Div.appendChild(delete_img);
+
+            todoList_Div.appendChild(Icon_Div);
+
+            
+            incomplete_space.appendChild(todoList_Div);
+
+        }
+
+        function moveComplete() {
+            let incomplete_space = document.querySelector(".inCom");
+            input_Val = document.querySelector(".inpValue").value;
+            addTask(input_Val, "check", incomplete_space);
+        }
+
+        function demo1(element) {
+            let innervalue = element.target.parentElement.parentElement.children[0].innerText;
+            element.target.parentElement.parentElement.remove();
+            let appendcomp = document.querySelector(".Comp");
+            addTask(input_Val, "close", appendcomp)
+        }
+        function demo2(element) {
+
+            let innervalue = element.target.parentElement.parentElement.children[0].innerText;
+            element.target.parentElement.parentElement.remove();
+            let append_comp = document.querySelector(".inComp");
+            append_comp.appendChild(todoList_Div);
+            // moveComplete()
+            addTask(input_Val, "check", append_comp)
+            // moveComplete();
+
+        }
+
+
+    </script>
+</body>
+
+</html>
